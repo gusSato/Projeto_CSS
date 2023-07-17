@@ -3,7 +3,10 @@
     margin: 0;
     padding: 0;
     --primary-color: rgb(29, 90, 201, 0.5);
+    --buttons:  rgba(100, 58, 155, 0.75);
+    --buttons-hover: rgb(70, 0, 162);
     --transparent:  rgba(0, 0, 0, 0.25);
+    --perfil: rgba(10, 82, 159, 0.5);
 }
 
 body{
@@ -49,28 +52,28 @@ body{
 .contatos{
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center ;
     color: white;
 }
 
 .contatos a{
     display: flex;
     justify-content: center;
+    align-items: center;
     text-decoration: none;
-    background-color: rgba(20, 20, 155);
+    background-color: var(--buttons);
     color: white;
-    width: 50% ;
+    width: 50%;
     margin-bottom: 5%;
     font-size: 1.25rem;
-    padding: 10%;
+    padding: 15px;
     border-radius: 10px;
 }
 
 .contatos a:hover{
-    background-color: rgb(15, 15, 100);;
+    background-color: var(--buttons-hover);
 }
 
 .content{
@@ -139,14 +142,16 @@ body{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    background-color: rgba(255, 166, 0, 0.503);
+    background-color: var(--perfil);
+    text-align: center;
     border-radius: 10px;
-    padding: 5px;
+    color: white;
+    padding: 25px;
     margin: 15px;
     width: 275px;
-    height: 325px;
+    height: 425px;
 }
 
 .perfil-inspiracao img{
@@ -155,29 +160,28 @@ body{
     width: 200px;
 }
 
-.perfil-inspiracao h2{
-    display: flex;
-    justify-content: center;
-    color: black;
-    width: 100%;
-}
-
 .link{
     display: flex;
     justify-content: center;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin: 0;
-    padding: 10px;
-    background-color: red;
-    width: 50%;
+    padding: 0;
+    border-radius: 10px;
+    background-color: var(--buttons);
     font-size: 18px;
     color: white;
 }
 
 .link a{
+    padding: 15px;
+    border-radius: 10px;
     text-decoration: none;
     color: white;
+}
+
+.link a:hover{
+    background-color: var(--buttons-hover);
 }
 
 .buttom a{
@@ -187,7 +191,7 @@ body{
     border-radius: 50%;
     width: 100%;
     padding: 20px;
-    background-color: red;
+    background-color: var(--buttons);
 }
 
 .b1{
@@ -212,11 +216,13 @@ hr{
 
     #side_nav{
         display: flex;
+        margin: 0;
+        padding: 15px;
         justify-content: center;
         align-items: center;
         background-color: rgba(0, 0, 0, 0);
-        width: 100vw;
-        margin: 0 15px;
+        width: 100%;
+        overflow: hidden;
     }
 
     .imagem{
@@ -239,6 +245,7 @@ hr{
 
     .content{
         width: 100%;
+        overflow: hidden;
     }
     .sobre, .jornada, .net{
         margin: 15px;
@@ -298,13 +305,14 @@ hr{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        background-color: rgba(255, 166, 0, 0.503);
+        background-color: var(--perfil);
+        color: white;
         border-radius: 10px;
-        padding: 5px;
+        padding: 15px;
         width: 275px;
-        height: 325px;
+        height: 375px;
     }
     
     .perfil-inspiracao img{
@@ -314,9 +322,9 @@ hr{
     }
     
     .perfil-inspiracao h2{
+        margin: 0;
         display: flex;
         justify-content: center;
-        color: black;
         width: 100%;
     }
     
@@ -324,17 +332,24 @@ hr{
         display: flex;
         justify-content: center;
         flex-direction: row;
+        flex-wrap: nowrap;
         margin: 0;
-        padding: 10px;
-        background-color: red;
-        width: 50%;
+        padding: 0;
+        border-radius: 10px;
+        background-color: var(--buttons);
         font-size: 18px;
         color: white;
     }
     
     .link a{
+        padding: 15px;
+        border-radius: 10px;
         text-decoration: none;
         color: white;
+    }
+    
+    .link a:hover{
+        background-color: var(--buttons-hover);
     }
 
     .buttom a{
@@ -344,7 +359,7 @@ hr{
         border-radius: 50%;
         width: 100%;
         padding: 20px;
-        background-color: red;
+        background-color: var(--buttons);
     }
     
     .b1{
@@ -368,7 +383,7 @@ hr{
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: var(--transparent);
         width: 50%;
         margin: 0;
     }
@@ -447,13 +462,14 @@ hr{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        background-color: rgba(255, 166, 0, 0.503);
+        background-color: var(--perfil);
+        color: white;
         border-radius: 10px;
-        padding: 5px;
+        padding: 15px;
         width: 275px;
-        height: 325px;
+        height: 375px;
     }
     
     .perfil-inspiracao img{
@@ -463,9 +479,9 @@ hr{
     }
     
     .perfil-inspiracao h2{
+        margin: 0;
         display: flex;
         justify-content: center;
-        color: black;
         width: 100%;
     }
     
@@ -473,17 +489,24 @@ hr{
         display: flex;
         justify-content: center;
         flex-direction: row;
+        flex-wrap: nowrap;
         margin: 0;
-        padding: 10px;
-        background-color: red;
-        width: 50%;
+        padding: 0;
+        border-radius: 10px;
+        background-color: var(--buttons);
         font-size: 18px;
         color: white;
     }
     
     .link a{
+        padding: 15px;
+        border-radius: 10px;
         text-decoration: none;
         color: white;
+    }
+    
+    .link a:hover{
+        background-color: var(--buttons-hover);
     }
 
     .buttom a{
@@ -493,7 +516,7 @@ hr{
         border-radius: 50%;
         width: 100%;
         padding: 20px;
-        background-color: red;
+        background-color: var(--buttons);
     }
     
     .b1{
