@@ -51,6 +51,7 @@ body{
 
 .contatos{
     display: flex;
+    font-size: 20px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -81,6 +82,10 @@ body{
     width: 100%;
 }
 
+.content h1{
+    color: rgb(113, 29, 151);
+}
+
 .sobre, .jornada, .net{
     margin: 15px;
     border-radius: 10px;
@@ -96,6 +101,7 @@ body{
     color: white;
     font-size: 18px;
 }
+
 
 #dados{
     display: flex;
