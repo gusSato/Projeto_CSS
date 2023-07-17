@@ -94,7 +94,7 @@ body{
 .sobre{
     display: flex;
     flex-direction: column;
-    text-align: justify;
+    text-align: left;
     flex-wrap: wrap;
     padding: 15px;
     background-color: var(--primary-color);
@@ -116,7 +116,7 @@ body{
 .jornada{
     display: flex;
     flex-direction: column;
-    text-align: justify;
+    text-align: left;
     flex-wrap: wrap;
     padding: 15px;
     background-color: var(--primary-color);
