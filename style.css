@@ -8,6 +8,7 @@
 
 body{
     display: flex;
+    font-family: 'Cinzel', serif;
     background-image: url(./img/sky.jpeg);
     background-repeat: no-repeat;
     background-position: center;
@@ -87,18 +88,20 @@ body{
     flex-direction: column;
     text-align: justify;
     flex-wrap: wrap;
-    padding: 10px;
+    padding: 15px;
     background-color: var(--primary-color);
     color: white;
     font-size: 18px;
 }
 
 #dados{
+    display: flex;
+    flex-direction: column;
     margin: 0px 15px;
 }
 
 #dados h3{
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .jornada{
@@ -106,7 +109,7 @@ body{
     flex-direction: column;
     text-align: justify;
     flex-wrap: wrap;
-    padding: 10px;
+    padding: 15px;
     background-color: var(--primary-color);
     color: white;
     font-size: 18px;
@@ -117,7 +120,7 @@ body{
     flex-direction: column;
     text-align: justify;
     flex-wrap: wrap;
-    padding: 10px;
+    padding: 15px;
     background-color: var(--primary-color);
     color: white;
     font-size: 24px;
@@ -127,7 +130,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 5px;
+    padding: 10px;
     margin: 0 10%;
     overflow: auto;
 }
@@ -195,16 +198,12 @@ body{
 }
 
 hr{
-    border-top: 1.5px solid white;
+    border-top: 1.5px solid black;
 }
 
 
 
 @media screen and (max-width: 767px) {
-
-    body{
-        width: 100%;
-    }
 
     main div{
         display: flex;
@@ -216,14 +215,21 @@ hr{
         justify-content: center;
         align-items: center;
         background-color: rgba(0, 0, 0, 0);
-        width: 100%;
+        width: 100vw;
+        margin: 0 15px;
     }
 
     .imagem{
-        width: 300px;
+        display: flex;
+        text-align: center;
+        width: 225px;
+        margin: 0;
     }
 
     .contatos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 50%;
     }
 
@@ -234,14 +240,57 @@ hr{
     .content{
         width: 100%;
     }
+    .sobre, .jornada, .net{
+        margin: 15px;
+        border-radius: 10px;
+    }
+    
+    .sobre{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        flex-wrap: wrap;
+        padding: 15px;
+        background-color: var(--primary-color);
+        color: white;
+        font-size: 18px;
+    }
+    
 
+    #dados h3{
+        font-size: 12px;
+    }
+    
+    .jornada{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        flex-wrap: wrap;
+        padding: 15px;
+        background-color: var(--primary-color);
+        color: white;
+        font-size: 18px;
+    }
+
+    .net{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 15px;
+        background-color: var(--primary-color);
+        color: white;
+        font-size: 24px;
+    }
     
     .inspiracao{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-around;
-        padding: 5px;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        margin: 0;
+        width: 100%;
         overflow: auto;
     }
     
@@ -254,8 +303,7 @@ hr{
         background-color: rgba(255, 166, 0, 0.503);
         border-radius: 10px;
         padding: 5px;
-        margin: 15px;
-        width: 250px;
+        width: 275px;
         height: 325px;
     }
     
@@ -272,6 +320,23 @@ hr{
         width: 100%;
     }
     
+    .link{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        margin: 0;
+        padding: 10px;
+        background-color: red;
+        width: 50%;
+        font-size: 18px;
+        color: white;
+    }
+    
+    .link a{
+        text-decoration: none;
+        color: white;
+    }
+
     .buttom a{
         display: flex;
         justify-content: center;
@@ -290,6 +355,151 @@ hr{
     }
 }
 
+
+
+
+
+
+
+
 @media screen and (min-width: 768px) and (max-width: 1100px){
+
+    #side_nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 50%;
+        margin: 0;
+    }
+
+    .imagem{
+        width: 225px;
+        margin: 0;
+    }
+
+    .contatos{
+        width: 50%;
+    }
+
+    .contatos a{
+        width: 100%;
+    }
+
+    .content{
+        width: 100%;
+    }
+    .sobre, .jornada, .net{
+        margin: 15px;
+        border-radius: 10px;
+    }
     
+    .sobre{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        flex-wrap: wrap;
+        padding: 15px;
+        background-color: var(--primary-color);
+        color: white;
+        font-size: 18px;
+    }
+    
+
+    #dados h3{
+        font-size: 12px;
+    }
+    
+    .jornada{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        flex-wrap: wrap;
+        padding: 15px;
+        background-color: var(--primary-color);
+        color: white;
+        font-size: 18px;
+    }
+
+    .net{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 15px;
+        background-color: var(--primary-color);
+        color: white;
+        font-size: 24px;
+    }
+    
+    .inspiracao{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        margin: 0;
+        width: 100%;
+        overflow: auto;
+    }
+    
+    .perfil-inspiracao{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 166, 0, 0.503);
+        border-radius: 10px;
+        padding: 5px;
+        width: 275px;
+        height: 325px;
+    }
+    
+    .perfil-inspiracao img{
+        display: flex;
+        border-radius: 50%;
+        width: 200px;
+    }
+    
+    .perfil-inspiracao h2{
+        display: flex;
+        justify-content: center;
+        color: black;
+        width: 100%;
+    }
+    
+    .link{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        margin: 0;
+        padding: 10px;
+        background-color: red;
+        width: 50%;
+        font-size: 18px;
+        color: white;
+    }
+    
+    .link a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .buttom a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        width: 100%;
+        padding: 20px;
+        background-color: red;
+    }
+    
+    .b1{
+        display: flex;
+        position: fixed;
+        bottom: 1%;
+        right: 1%;
+    }
 }
